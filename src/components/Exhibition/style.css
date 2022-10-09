@@ -1,0 +1,33 @@
+.featurette-heading {
+  font-family: "Noto Sans", sans-serif;
+}
+.featurette-text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    #313c85,
+    #323575,
+    #312f66,
+    #2e2858,
+    #2a234a,
+    #251d3d,
+    #201830,
+    #1a1324
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.glassCard {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 10px;
+}

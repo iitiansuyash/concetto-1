@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 30px;
+}
+.cards {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+}
+@media (min-width: 60rem) {
+  .cards {
+    width: 33.3%;
+  }
+}
+@media (min-width: 80rem) {
+  .cards {
+    width: 25%;
+  }
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  /* box-shadow: 0 0px 40px -14px rgba(0, 0, 0, 0.25); */
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+.cards .card-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.cards .card-item:hover .card-image {
+  opacity: 1;
+}
+.cards .card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  line-height: 1em;
+}
+.cards .card-title {
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #32325d;
+  margin-bottom: 0.2em;
+}
+.cards .card-image {
+
+  max-height: 300px;
+  max-width: 620px;
+  overflow: hidden;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0.91;
+}
+@media (min-width: 60rem) {
+  .cards .card-image {
+        max-height: 200px;
+  max-width: 220px;
+  }
+}
+.cards .card-info .card-intro {
+  margin: 0px;
+  line-height: 1.5em;
+}
+.club-text{
+font-weight: 800;
+}

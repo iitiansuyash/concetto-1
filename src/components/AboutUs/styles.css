@@ -1,0 +1,93 @@
+.theme-page {
+  background: linear-gradient(
+    90deg,
+    #313c85,
+    #323575,
+    #312f66,
+    #2e2858,
+    #2a234a,
+    #251d3d,
+    #201830,
+    #1a1324
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.opaque {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  padding: 30px !important;
+  padding-top: 5px !important;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  padding: 30px !important;
+  font-size: 16px;
+}
+
+.upper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.meetup {
+  color: rgb(255, 203, 226) !important;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.group {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.row-item {
+  padding-left: 10px;
+}
+
+.themedButton {
+  background-color: darkblue;
+  color: white;
+}
