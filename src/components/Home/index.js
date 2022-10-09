@@ -198,7 +198,7 @@ class Home extends Component {
         <HomeHeader></HomeHeader>
         <div className={classes.logo} ref={this.vantaRef}>
           <img
-            src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"
+            src="../images/concetto_logo.webp"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={" "}

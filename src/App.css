@@ -64,8 +64,8 @@ a:hover {
 .logo-home {
   position: fixed;
   /* transition: all 1s ease-in-out; */
-  height: 75vw;
-  width: 90vw;
+  height: 80vw;
+  width: 70vw;
   top: 50%;
   left: 50%;
   vertical-align: middle;
@@ -78,7 +78,7 @@ a:hover {
 @media only screen and (min-width: 768px) {
   .logo-home {
     height: 350px;
-    width: 756px;
+    width: 350px;
     vertical-align: middle;
   }
 }
@@ -98,13 +98,13 @@ a:hover {
      } */
 
 .logo-header {
-  height: 75px;
+  height: 45px;
   position: fixed;
   transform: translate(-50%, -50%);
   /* transition: all 1s ease-in-out; */
-  width: 150px;
+  width: 60px;
   /* float:left; */
-  top: 35px;
+  top: 30px;
   left: 80px;
   z-index: 1035;
 }

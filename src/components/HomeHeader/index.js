@@ -73,8 +73,19 @@ class Header extends Component {
                   ABOUT US
                 </NavLink>
               </li>
-
               <li>
+                <NavLink
+                  className="nav-link header-link "
+                  // to="/informal-events"
+                  to="#"
+                  onClick={this.toggleMenu}
+                >
+                  {/* INFORMAL EVENTS */}
+                  EVENTS
+                </NavLink>
+              </li>
+
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/exhibitions"
@@ -95,15 +106,6 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link header-link "
-                  to="/informal-events"
-                  onClick={this.toggleMenu}
-                >
-                  INFORMAL EVENTS
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className="nav-link header-link "
                   to="/club-events"
                   onClick={this.toggleMenu}
                 >
@@ -118,7 +120,7 @@ class Header extends Component {
                 >
                   DEPARTMENTAL EVENTS
                 </NavLink>
-              </li>
+              </li> ccS */}
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -128,7 +130,7 @@ class Header extends Component {
                   LOGIN
                 </NavLink>
               </li> */}
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/our-team"
@@ -136,7 +138,7 @@ class Header extends Component {
                 >
                   OUR TEAM
                 </NavLink>
-              </li>
+              </li> ccS */}
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -146,7 +148,7 @@ class Header extends Component {
                   CAP
                 </NavLink>
               </li> */}
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/guest-talks"
@@ -163,7 +165,7 @@ class Header extends Component {
                 >
                   SPONSORS
                 </NavLink>
-              </li>
+              </li>  ccS*/}
             </ul>
           </div>
         </nav>

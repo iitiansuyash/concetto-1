@@ -21,7 +21,8 @@ export const HomeContent = [
   //     "This year, for the first time, in history of Concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works. More will be revealed soon."
   // },
   {
-    link: "department-events",
+    // link: "department-events",
+    link: "#",
     heading: "DEPARTMENTAL EVENTS",
     image1:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/Truss+The+Frame_main.jpg",
@@ -33,7 +34,8 @@ export const HomeContent = [
       "Organized by the Departments of IIT (ISM) Dhanbad, these events prove to be a different kind of challenge for the participants. Along with sound technical knowledge, they also check your proficiency in various fields of engineering. They make you think out of the box in problems associated with the respective fields."
   },
   {
-    link: "club-events",
+    // link: "club-events",
+    link: "#",
     heading: "CLUB EVENTS",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/club1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/club2.jpg",
