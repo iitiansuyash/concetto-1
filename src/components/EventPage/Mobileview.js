@@ -8,7 +8,6 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import AppBar from "@material-ui/core/AppBar";
 import Header from "../Header";
-// import { NavLink } from "reactstrap";
 
 const styles = theme => ({
   mobileTab: {
@@ -121,7 +120,7 @@ class EventDetail extends Component {
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
               component={Link}
               to="club-events"
-              // onClick={this.clubShow}
+            // onClick={this.clubShow}
             />
           </Tabs>
         </AppBar>

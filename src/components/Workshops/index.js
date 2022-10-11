@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Header from "../Header";
-import { Workshop_list } from "../../shared/Workshops";
+import { Workshop_list } from "../../data/Workshops";
 import { Helmet } from "react-helmet";
+
+
 class Workshops extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -91,7 +93,7 @@ class Workshops extends Component {
                     >
                       <button
                         className="btn btn-primary text-center"
-                        // style={{ marginLeft: "50%" }}
+                      // style={{ marginLeft: "50%" }}
                       >
                         Register <i class="fa fa-arrow-circle-right"></i>
                       </button>

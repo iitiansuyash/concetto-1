@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "../Header";
 import "./styles.css";
+
+
 class Sponsors extends Component {
   constructor(props) {
     super(props);
@@ -89,12 +90,12 @@ class Sponsors extends Component {
               <React.Fragment key={id.toString()}>
                 <div
                   class={"col-12  offset-md-3 col-md-6 "}
-                  // style={{
-                  //   paddingLeft: 'auto',
-                  //   display: "flex",
-                  //   alignItems: "center",
-                  //   flexWrap: "wrap"
-                  // }}
+                // style={{
+                //   paddingLeft: 'auto',
+                //   display: "flex",
+                //   alignItems: "center",
+                //   flexWrap: "wrap"
+                // }}
                 >
                   <a
                     href={title.link}
@@ -111,12 +112,12 @@ class Sponsors extends Component {
                       focusable="false"
                       aria-label="Placeholder: 500x500"
                       alt={"Loading..."}
-                      // style={{
-                      //   display: "block",
-                      //   marginLeft: "auto",
-                      //   marginRight: "auto",
-                      //   width: "40%"
-                      // }}
+                    // style={{
+                    //   display: "block",
+                    //   marginLeft: "auto",
+                    //   marginRight: "auto",
+                    //   width: "40%"
+                    // }}
                     />
                   </a>
                 </div>

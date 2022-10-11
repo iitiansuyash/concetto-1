@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
-import { CoreTeam } from "../../shared/CoreTeam";
-import { DeveloperTeam } from "../../shared/DeveloperTeam";
+import { CoreTeam } from "../../data/CoreTeam";
+import { DeveloperTeam } from "../../data/DeveloperTeam";
 import "./styles.css";
 import { Helmet } from "react-helmet";
 

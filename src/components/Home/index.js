@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import Loading from "../Loading";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Footer from "../Footer";
@@ -7,7 +6,7 @@ import HomeHeader from "../HomeHeader";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
-import { HomeContent } from "../../shared/Content";
+import { HomeContent } from "../../data/Content";
 import CLOUDS from 'vanta/dist/vanta.clouds.min.js';
 import * as THREE from 'three'
 import "./styles.css";

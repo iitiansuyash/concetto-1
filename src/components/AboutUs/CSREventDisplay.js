@@ -1,5 +1,5 @@
 import React from "react";
-import { CSREvents } from "../../shared/CSREvents";
+import { CSREvents } from "../../data/CSREvents";
 
 function CSREventDisplay(props) {
   return (

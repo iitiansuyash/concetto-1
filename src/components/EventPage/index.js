@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
-// import Loading from "../Loading";
 import DepartmentEvent from "./DepartmentEvent";
 import { Link } from "react-router-dom";
 import ClubEvent from "./ClubEvent";

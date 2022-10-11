@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { Helmet } from "react-helmet";
 class Register extends Component {
   render() {
@@ -13,21 +12,17 @@ class Register extends Component {
           <title>{event.name}</title>
           <meta
             name="description"
-            content={`Organized by ${
-              event.is_club
+            content={`Organized by ${event.is_club
                 ? event.club + " club "
                 : event.dept + " department "
-            } of IIT (ISM) Dhanbad, during Concetto 2019. ${
-              !event.about ? event.description : event.about
-            } Register for it here.`}
+              } of IIT (ISM) Dhanbad, during Concetto 2019. ${!event.about ? event.description : event.about
+              } Register for it here.`}
           />
           <meta
             name="keywords"
-            content={`${event.name}  register concetto , register for ${
-              event.name
-            } , register for ${event.name} 2019, ${
-              event.is_club ? event.club : event.dept
-            } concetto , iit ism dhanbad techfest, iit dhanbad techfest, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest`}
+            content={`${event.name}  register concetto , register for ${event.name
+              } , register for ${event.name} 2019, ${event.is_club ? event.club : event.dept
+              } concetto , iit ism dhanbad techfest, iit dhanbad techfest, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest`}
           />
         </Helmet>
         {event.link ? (

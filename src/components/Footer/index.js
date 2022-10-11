@@ -1,11 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faWhatsapp
-} from "@fortawesome/free-brands-svg-icons";
-import { Tooltip } from "reactstrap";
+import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "../Header";
+
 class InformalEvents extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);

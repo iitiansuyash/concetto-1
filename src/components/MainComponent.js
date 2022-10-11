@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import HomeHeader from "./HomeHeader";
 import Home from "./Home";
 import EventPage from "./EventPage";
 
@@ -11,15 +10,15 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import EventDetail from "./EventDetail";
 import OurTeam from "./OurTeam";
 import ComingSoon from "./ComingSoon";
-import { Events } from "../shared/Events";
+import { Events } from "../data/Events";
 import InformalEvents from "./InformalEvents";
 import Workshops from "./Workshops";
 import AboutUs from "./AboutUs";
 import GuestTalk from "./GuestTalks";
 import Exhibition from "./Exhibition";
-import { Informals } from "../shared/InformalEvents";
+import { Informals } from "../data/InformalEvents";
 import Sponsers from "./Sponsors";
-import { SponsorsList } from "../shared/Sponsors";
+import { SponsorsList } from "../data/Sponsors";
 
 // const mapStateToProps = state => {
 //   return {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "./Styles.css";
-// import Loading from "../Loading";
 import About from "./About";
 import Rules from "./Rules";
 import Details from "./Details";

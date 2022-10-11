@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { GuestTalks } from "../../shared/GuestTalks";
+import { GuestTalks } from "../../data/GuestTalks";
 import Header from "../Header";
 import "./styles.css";
 import { Helmet } from "react-helmet";

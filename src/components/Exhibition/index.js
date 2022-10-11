@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import "./style.css";
-import { Exhibitions } from "../../shared/Exhibitions";
+import { Exhibitions } from "../../data/Exhibitions";
 import { Helmet } from "react-helmet";
 
 class Exhibition extends Component {
