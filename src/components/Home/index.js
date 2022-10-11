@@ -38,7 +38,7 @@ const styles = theme => ({
   },
   moon: {
     display: "flex",
-    zIndex: 200,
+    zIndex: 999,
     // height: "1800px",
     bottom: 0,
     position: "fixed"
