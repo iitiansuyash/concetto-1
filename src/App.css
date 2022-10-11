@@ -94,6 +94,10 @@ body {
   background-attachment: fixed;
 }
 
+img {
+  opacity: 1 !important;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px auto;
@@ -117,7 +121,7 @@ a:hover {
 
 .black {
   background-color: #0f0f0f;
-  opacity: 0.9;
+  opacity: 1;
   color: white;
 }
 
@@ -243,7 +247,7 @@ a:hover {
   right: 0;
   top: 0;
   background: black;
-  opacity: 0.6;
+  opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
