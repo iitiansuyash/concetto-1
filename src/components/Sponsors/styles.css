@@ -1,18 +1,56 @@
-.team-page{
-  background: url("https://i.pinimg.com/originals/6c/2a/8e/6c2a8ea0cd5299273da85ed8faf0ec17.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-   -o-background-size: cover;
-  background-size: cover;
-  background-image: repeat;
+.sponsors {
+  padding: 75px 0;
+  background: rgb(16, 16, 64);
+  color: white;
 }
-.title-sponser{
-  font-size: 100px;
-  color: black;
+
+.sponsors h2 {
+  margin-bottom: 50px;
 }
-@media (max-width: 800px)
-{
-  .title-sponser{
-  font-size: 50px;
+
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sponsors-list a {
+  margin: 0 30px 30px;
+  height: 135px;
+}
+
+@media only screen and (max-width: 980px) {
+  .sponsors-list a {
+    margin: 0 15px;
+  }
+}
+
+.sponsors-list a img {
+  padding: 20px 0;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sponsors-list a:hover img {
+  opacity: 0.55;
+}
+
+.more {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cap-logo {
+  width: 500px !important;
+  height: auto !important;
+}
+@media only screen and (max-width: 500px) {
+  .cap-logo {
+    width: 350px !important;
+    height: auto;
   }
 }
