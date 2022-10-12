@@ -39,8 +39,9 @@ const styles = theme => ({
   moon: {
     display: "flex",
     zIndex: 999,
-    // height: "1800px",
-    bottom: 0,
+    height: "300px",
+    width: "1000px",
+    bottom: -70,
     position: "fixed"
   }
 });
@@ -213,11 +214,11 @@ class Home extends Component {
             }}
           >
             <img
-              src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.webp"
+              src="https://www.resizepixel.com/Image/7j4i0tstap/Preview/landing.png?v=cf83c32c-2853-4524-8201-ce2fd0049d3a"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
-              style={{ transform: "translateY(" + offset + "vh)" }}
+              style={{ transform: "translateY(" + offset + "px" }}
             />
           </div>
         }

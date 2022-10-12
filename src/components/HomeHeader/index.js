@@ -84,6 +84,15 @@ class Header extends Component {
                   EVENTS
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/sponsors"
+                  onClick={this.toggleMenu}
+                >
+                  SPONSORS
+                </NavLink>
+              </li> 
 
               {/* <li>
                 <NavLink
@@ -120,7 +129,7 @@ class Header extends Component {
                 >
                   DEPARTMENTAL EVENTS
                 </NavLink>
-              </li> ccS */}
+              </li>*/}
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -138,7 +147,7 @@ class Header extends Component {
                 >
                   OUR TEAM
                 </NavLink>
-              </li> ccS */}
+              </li>*/}
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -157,15 +166,8 @@ class Header extends Component {
                   GUEST TALKS
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/sponsors"
-                  onClick={this.toggleMenu}
-                >
-                  SPONSORS
-                </NavLink>
-              </li>  ccS*/}
+              
+              */}
             </ul>
           </div>
         </nav>

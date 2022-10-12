@@ -38,7 +38,7 @@ export default function Sponsors() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://api.adviceslip.com/advice";
+    const url = "http://admin.concetto.in/sponsors/";
     const fetchData = async () => {
       try {
         const response = await fetch(url);
@@ -61,7 +61,7 @@ export default function Sponsors() {
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.filter(sponsor => sponsor.category == "Major Sponsor").map(sponsor => {
-              <a href={sponsor.url} target="_blank">
+              return <a href={sponsor.url} target="_blank">
                 <img src={sponsor.imageAddress} alt={sponsor.name} className="img-fluid cap-logo" />
               </a>
             })}
