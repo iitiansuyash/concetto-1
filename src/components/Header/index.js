@@ -34,7 +34,7 @@ class Header extends Component {
             <a className="navbar-brand">
               <span className="helper"></span>
               <img
-                src="../images/concetto_logo.webp"
+                src="../images/concettoLogo.webp"
                 className="logo-header"
                 alt={"CONCETTO"}
               />
@@ -105,6 +105,15 @@ class Header extends Component {
                   EVENTS
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/guest-talks"
+                  onClick={this.toggleMenu}
+                >
+                  SPONSORS
+                </NavLink>
+              </li>
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
@@ -148,15 +157,6 @@ class Header extends Component {
                   onClick={this.toggleMenu}
                 >
                   GUEST TALKS
-                </NavLink>
-              </li> */}
-              {/* <li>
-                <NavLink
-                  className="nav-link header-link "
-                  to="/sponsors"
-                  onClick={this.toggleMenu}
-                >
-                  SPONSORS
                 </NavLink>
               </li> */}
             </ul>

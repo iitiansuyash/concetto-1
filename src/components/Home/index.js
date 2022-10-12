@@ -39,8 +39,9 @@ const styles = theme => ({
   moon: {
     display: "flex",
     zIndex: 999,
-    // height: "1800px",
-    bottom: 0,
+    height: "300px",
+    width: "1000px",
+    bottom: -70,
     position: "fixed"
   }
 });
@@ -197,7 +198,7 @@ class Home extends Component {
         <HomeHeader></HomeHeader>
         <div className={classes.logo} ref={this.vantaRef}>
           <img
-            src="../images/concetto_logo.webp"
+            src="../images/concettoLogo.webp"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={" "}
@@ -213,11 +214,11 @@ class Home extends Component {
             }}
           >
             <img
-              src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.webp"
+              src="../images/Landing.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
-              style={{ transform: "translateY(" + offset + "vh)" }}
+              style={{ transform: "translateY(" + offset + "px" }}
             />
           </div>
         }
@@ -236,6 +237,10 @@ class Home extends Component {
           })}
         </div>
         <br />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+            <a href="https://api.whatsapp.com/send/?phone=919386667625&text&type=phone_number&app_absent=0" class="float" target="_blank">
+              <i class="fa fa-whatsapp my-float"></i>
+            </a>
         <Footer />
       </div>
     );

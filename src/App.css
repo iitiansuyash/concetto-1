@@ -61,8 +61,8 @@ body {
 
 .logo-home {
   position: fixed;
-  height: 80vw;
-  width: 70vw;
+  height: 100vw;
+  width: 90vw;
   top: 50%;
   left: 50%;
   vertical-align: middle;
@@ -71,20 +71,20 @@ body {
 
 @media only screen and (min-width: 768px) {
   .logo-home {
-    height: 350px;
-    width: 350px;
+    height: 450px;
+    width: 650px;
     vertical-align: middle;
   }
 }
 
 .logo-header {
-  height: 45px;
+  height: 100px;
   position: fixed;
   transform: translate(-50%, -50%);
-  width: 60px;
+  width: 150px;
   top: 30px;
   left: 80px;
-  z-index: 1035;
+  z-index: 999;
 }
 
 /* home page gradient  */
@@ -161,7 +161,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 40px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;

@@ -60,7 +60,7 @@ class EventDetail extends Component {
             <NavLink to="home">
               <img
                 src={
-                  "../images/concetto_logo.webp"
+                  "../images/concettoLogo.webp"
                 }
                 className="img-fluid"
                 alt={" "}
