@@ -77,7 +77,7 @@ class Header extends Component {
                 <NavLink
                   className="nav-link header-link "
                   // to="/informal-events"
-                  to="#"
+                  to="/club-events"
                   onClick={this.toggleMenu}
                 >
                   {/* INFORMAL EVENTS */}

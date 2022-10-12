@@ -21,8 +21,18 @@ export const HomeContent = [
   //     "This year, for the first time, in history of Concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works. More will be revealed soon."
   // },
   {
+    // link: "club-events",
+    link: "club-events",
+    heading: "CLUB EVENTS",
+    image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/club1.jpg",
+    image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/club2.jpg",
+    image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/club3.jpg",
+    description:
+      "Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Concetto'22. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
+  },
+  {
     // link: "department-events",
-    link: "#",
+    link: "department-events",
     heading: "DEPARTMENTAL EVENTS",
     image1:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/Truss+The+Frame_main.jpg",
@@ -32,16 +42,6 @@ export const HomeContent = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/department3.jpg",
     description:
       "Organized by the Departments of IIT (ISM) Dhanbad, these events prove to be a different kind of challenge for the participants. Along with sound technical knowledge, they also check your proficiency in various fields of engineering. They make you think out of the box in problems associated with the respective fields."
-  },
-  {
-    // link: "club-events",
-    link: "#",
-    heading: "CLUB EVENTS",
-    image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/club1.jpg",
-    image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/club2.jpg",
-    image3: "https://concetto-front.s3.ap-south-1.amazonaws.com/club3.jpg",
-    description:
-      "Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Concetto'22. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
   },
   // {
   //   link: "workshops",

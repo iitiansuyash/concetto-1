@@ -48,11 +48,11 @@ class ClubEvent extends Component {
           <title>Concetto club events</title>
           <meta
             name="description"
-            content="Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Concetto 2019. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
+            content="Organized by the various clubs of IIT (ISM) Dhanbad, are the attraction of Concetto 2022. Having a special combination of management and technical prowess, club events provide a platform to budding entrepreneurs to showcase their skills and to prove their mettle among the very best in the field."
           />
           <meta
             name="keywords"
-            content="club events concetto 2019, club event iit dhanbad, iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto theme, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+            content="club events concetto 2022, club event iit dhanbad, iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 22,Concetto 2022,Concetto 2k22,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto theme, Concetto techfest,Concetto tecnical fest, Concetto 2022-2020, Concetto tech fest 22,Concetto tech fest 2022,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
           />
         </Helmet>
         <br />

@@ -198,7 +198,7 @@ class Home extends Component {
         <HomeHeader></HomeHeader>
         <div className={classes.logo} ref={this.vantaRef}>
           <img
-            src="../images/concetto_logo.webp"
+            src="../images/concettoLogo.webp"
             className={`logo logo-home`}
             ref={this.homeRef}
             alt={" "}
@@ -214,7 +214,7 @@ class Home extends Component {
             }}
           >
             <img
-              src="https://www.resizepixel.com/Image/7j4i0tstap/Preview/landing.png?v=cf83c32c-2853-4524-8201-ce2fd0049d3a"
+              src="../images/Landing.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
@@ -237,6 +237,10 @@ class Home extends Component {
           })}
         </div>
         <br />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+            <a href="https://api.whatsapp.com/send/?phone=919386667625&text&type=phone_number&app_absent=0" class="float" target="_blank">
+              <i class="fa fa-whatsapp my-float"></i>
+            </a>
         <Footer />
       </div>
     );
