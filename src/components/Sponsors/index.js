@@ -37,21 +37,6 @@ export default function Sponsors() {
 
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const url = "http://admin.concetto.in/sponsors/";
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        setData(json);
-      } catch (error) {
-        console.log("error", error);
-      }
-    };
-    fetchData();
-  }, []);
-
-
   return (
     <>
       <Header />
