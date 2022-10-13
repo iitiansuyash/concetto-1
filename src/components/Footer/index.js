@@ -74,6 +74,12 @@ class Footer extends React.Component {
         >
           <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
         </a>
+        <a
+          href="https://www.instagram.com/concetto.iitism/"
+          className={classes.a}
+        >
+          <img src="https://img.icons8.com/fluency/48/000000/linkedin-2.png"/>
+        </a>
         {/* <a href="https://wa.me/919386667625" className={classes.a}>
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a> */}

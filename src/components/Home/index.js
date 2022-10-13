@@ -40,8 +40,8 @@ const styles = theme => ({
     display: "flex",
     zIndex: 999,
     height: "300px",
-    width: "1000px",
-    bottom: -70,
+    width: "600px",
+    bottom: 20,
     position: "fixed"
   }
 });
@@ -167,6 +167,8 @@ class Home extends Component {
     window.scrollTo(0, window.innerHeight);
   }
 
+  
+
   render() {
     const { classes } = this.props;
     const { offset, x } = this.state;
@@ -180,9 +182,9 @@ class Home extends Component {
           />
           <meta
             name="keywords"
-            content="Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto iit,Concetto iit (ism) dhanbad,Concetto iit ism,Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
+            content="Concetto,Concetto 22,Concetto 2022,Concetto 2k22,Concetto iit,Concetto iit (ism) dhanbad,Concetto iit ism,Concetto techfest,Concetto tecnical fest, Concetto 2022-2020, Concetto tech fest 22,Concetto tech fest 2022,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
           />
-          <meta property="og:url" content="https://www.concetto19.tech/" />
+          <meta property="og:url" content="https://www.concetto.in/" />
         </Helmet>
         <section id="scroll_down" className="demo">
           <a
@@ -214,7 +216,7 @@ class Home extends Component {
             }}
           >
             <img
-              src="../images/Landing.png"
+              src="../images/landing.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "
@@ -236,9 +238,11 @@ class Home extends Component {
               );
           })}
         </div>
+
+        
         <br />
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-            <a href="https://api.whatsapp.com/send/?phone=919386667625&text&type=phone_number&app_absent=0" class="float" target="_blank">
+            <a href="https://api.whatsapp.com/send/?phone=922386667625&text&type=phone_number&app_absent=0" class="float" target="_blank">
               <i class="fa fa-whatsapp my-float"></i>
             </a>
         <Footer />
@@ -251,3 +255,5 @@ Home.propTypes = {
   classes: PropTypes.object.isRequired
 };
 export default withStyles(styles)(Home);
+
+
