@@ -66,6 +66,16 @@ class EventDetail extends Component {
               </NavLink>
             </div>
             <div className="btnFlex">
+              <Link to="club-events">
+                <button style={{ "fontFamily": "'Noto Sans',sans-serif" }}
+                  className={
+                    "btn btn-event btn-2 " +
+                    (active === 1 ? "active-bottom" : "")
+                  }
+                >
+                  CLUB
+                </button>
+              </Link>
               <Link to="department-events">
                 <button style={{ "fontFamily": "'Noto Sans',sans-serif" }}
                   className={
@@ -75,16 +85,6 @@ class EventDetail extends Component {
                   onClick={this.departmentShow}
                 >
                   DEPARTMENT
-                </button>
-              </Link>
-              <Link to="club-events">
-                <button style={{ "fontFamily": "'Noto Sans',sans-serif" }}
-                  className={
-                    "btn btn-event btn-2 " +
-                    (active === 1 ? "active-bottom" : "")
-                  }
-                >
-                  CLUB
                 </button>
               </Link>
             </div>

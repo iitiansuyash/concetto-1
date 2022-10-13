@@ -99,7 +99,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link header-link "
-                  to="#"
+                  to="/club-events"
                   onClick={this.toggleMenu}
                 >
                   EVENTS
@@ -108,7 +108,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link header-link "
-                  to="/guest-talks"
+                  to="/sponsors"
                   onClick={this.toggleMenu}
                 >
                   SPONSORS
