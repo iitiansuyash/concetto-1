@@ -31,17 +31,11 @@ class Main extends Component {
 
   fetchData = async () => {
     try {
-      const response = await fetch("http://admin.concetto.in/events/", {
-        mode: 'no-cors',
-        method: "get",
-        headers: {
-          "Content-Type": "application/json"
-        },
-      })
-      console.log(response)
+      const response = await fetch("https://admin.concetto.in/events/", {mode:'cors'}).then(response => response.json()).then(data => console.log(data))
       this.setState({
         events: response.data
       })
+      // axios.get("https://admin.concetto.in/events/", {mode:'cors'}).then(response => response).catch(error => console.log(error.response))
     } catch (error) {
       console.error(error);
     }
