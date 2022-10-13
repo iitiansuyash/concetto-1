@@ -18,45 +18,26 @@ class Details extends Component {
           <title>{event.name}</title>
           <meta
             name="description"
-            content={`Organized by ${event.is_club && event.club
-                ? event.club + " club "
-                : event.dept + " department "
-              } of IIT (ISM) Dhanbad, during Concetto 2019. ${(!event.description ? event.about : "") + event.description
-              }
-            } `}
+            content={`Organized by ${event.event_type == "club"
+              ? event.presented_by + " club "
+              : event.presented_by + " department "
+              } of IIT (ISM) Dhanbad, during Concetto 2019. ${event.details}`}
           />
           <meta
             name="keywords"
             content={`details of ${event.name} concetto , details of ${event.name
-              } , ${event.name} 2019 details , ${event.is_club ? event.club : event.dept
-              } concetto , iit ism dhanbad techfest, iit dhanbad techfest, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest`}
+              } , ${event.name} 2019 details , ${event.presented_by} concetto , iit ism dhanbad techfest, iit dhanbad techfest, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest`}
           />
         </Helmet>
         <StyledText>
-          {event.description.split(";").map((sen) => (
-            <React.Fragment>
-              {sen}
-              <br />
-            </React.Fragment>
-          ))}
+          {event.details}
         </StyledText>
         <StyledText>
-          {event.fee ? (
-            <React.Fragment>
-              <br />
-              Participation fees &nbsp; : &nbsp; &#8377; {event.fee} /- per{" "}
-              {event.is_team ? " team " : " person "}
-            </React.Fragment>
-          ) : (
-            ""
-          )}
-        </StyledText>
-        <StyledText>
-          {event.pdf ? (
+          {event.brochure_link ? (
             <React.Fragment>
               <br />
               For detailed description, refer the{" "}
-              <a href={event.pdf}>document</a>
+              <a href={event.brochure_link}>document</a>
             </React.Fragment>
           ) : (
             ""
@@ -64,20 +45,12 @@ class Details extends Component {
         </StyledText>
         <br />
         <StyledText>
-          {event.admins ? (
+          {event.summary.split(",").map((sen) => (
             <React.Fragment>
-              {" "}
-              For any queries, feel free to contact :
+              {sen}
               <br />
-              <ul>
-                {event.admins.map((admin, id) => (
-                  <li key={id.toString()}>{admin}</li>
-                ))}
-              </ul>
             </React.Fragment>
-          ) : (
-            ""
-          )}
+          ))}
         </StyledText>
       </div>
     );

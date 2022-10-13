@@ -40,8 +40,8 @@ class EventDetail extends Component {
     super(props);
     const { events } = props;
     this.state = {
-      departmental: events.filter(event => event.is_club === 0),
-      clubEvents: events.filter(event => event.is_club === 1)
+      departmental: events.filter(event => event.event_type == "departmental"),
+      clubEvents: events.filter(event => event.event_type === "club")
     };
   }
   componentDidMount() {

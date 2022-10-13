@@ -15,7 +15,6 @@ import styled from "styled-components";
 const StyledImage = styled.img`
   
 `
-
 const styles = theme => ({
   verticalTab: {
     display: "flex",
@@ -45,6 +44,7 @@ const styles = theme => ({
     }
   }
 });
+
 
 class EventDetail extends Component {
   componentDidMount() {
@@ -112,7 +112,7 @@ class EventDetail extends Component {
         </div>
         {window.innerWidth < 960 ? <Header /> : <HomeHeader />}
         <div className={classes.image}>
-          <img src={event.img} alt={event.name} className="event-img rounded" />
+          <img src={event.image} alt={event.name} className="event-img rounded" />
           <div
             style={{
               fontSize: "40px",
@@ -125,7 +125,6 @@ class EventDetail extends Component {
           </div>
           <div className={classes.desktopView}>
             {active === "about" && <About event={this.props.event} />}
-            {active === "rules" && <Rules event={this.props.event} />}
             {active === "details" && <Details event={this.props.event} />}
             {active === "register" && <Register event={this.props.event} />}
           </div>
