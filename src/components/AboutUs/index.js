@@ -98,7 +98,7 @@ class AboutUs extends Component {
           <br />
         </div>
         <br />
-        <h1
+        {/* <h1
           style={{
             textAlign: "center",
             marginTop: "120px",
@@ -133,7 +133,7 @@ class AboutUs extends Component {
           splendid and glorious than ever before IIT ISM presenting{" "}
           <b>CONCETTO: REALITY BEYOND VISION</b>.
         </div>
-        <br />
+        <br /> */}
         <h1
           style={{
             textAlign: "center",

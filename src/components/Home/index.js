@@ -167,7 +167,7 @@ class Home extends Component {
     window.scrollTo(0, window.innerHeight);
   }
 
-  
+
 
   render() {
     const { classes } = this.props;
@@ -239,12 +239,12 @@ class Home extends Component {
           })}
         </div>
 
-        
+
         <br />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-            <a href="https://api.whatsapp.com/send/?phone=922386667625&text&type=phone_number&app_absent=0" class="float" target="_blank">
-              <i class="fa fa-whatsapp my-float"></i>
-            </a>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+        {/* <a href="https://api.whatsapp.com/send?phone=9835063191" class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+        </a> */}
         <Footer />
       </div>
     );

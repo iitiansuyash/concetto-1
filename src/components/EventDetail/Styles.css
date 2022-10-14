@@ -70,3 +70,7 @@ button .btn-2:focus {
     max-width: 30vw;
   }
 }
+
+.EventDetail-eventsCard-3 {
+  margin-left: 20vw !important;
+}

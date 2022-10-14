@@ -42,7 +42,7 @@ const styles = theme => ({
       marginLeft: "0px",
       marginTop: "50px"
     }
-  }
+  },
 });
 
 
@@ -76,16 +76,6 @@ class EventDetail extends Component {
                 }
               >
                 ABOUT
-              </button>
-            </Link>
-            <Link to="rules">
-              <button
-                className={
-                  "btn btn-event btn-2 " +
-                  (active === "rules" ? "active-bottom" : "")
-                }
-              >
-                RULES
               </button>
             </Link>
             <Link to="details">

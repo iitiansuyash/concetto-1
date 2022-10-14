@@ -105,7 +105,7 @@ class Header extends Component {
                   EVENTS
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/sponsors"
@@ -113,7 +113,7 @@ class Header extends Component {
                 >
                   SPONSORS
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink
                   className="nav-link header-link "

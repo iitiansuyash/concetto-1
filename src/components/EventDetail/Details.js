@@ -18,7 +18,7 @@ class Details extends Component {
           <title>{event.name}</title>
           <meta
             name="description"
-            content={`Organized by ${event.event_type == "club"
+            content={`Organized by ${event.event_type === "club"
               ? event.presented_by + " club "
               : event.presented_by + " department "
               } of IIT (ISM) Dhanbad, during Concetto 2019. ${event.details}`}
@@ -44,14 +44,6 @@ class Details extends Component {
           )}
         </StyledText>
         <br />
-        <StyledText>
-          {event.summary.split(",").map((sen) => (
-            <React.Fragment>
-              {sen}
-              <br />
-            </React.Fragment>
-          ))}
-        </StyledText>
       </div>
     );
   }

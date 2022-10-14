@@ -66,33 +66,31 @@ class Footer extends React.Component {
           href="https://www.facebook.com/Concettoiitdhanbad/"
           className={classes.a}
         >
-          <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+          <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
         </a>
         <a
           href="https://www.instagram.com/concetto.iitism/"
           className={classes.a}
         >
-          <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+          <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
         </a>
         <a
-          href="https://www.instagram.com/concetto.iitism/"
+          href="https://www.linkedin.com/company/concetto-iitism-dhanbad/"
           className={classes.a}
         >
-          <img src="https://img.icons8.com/fluency/48/000000/linkedin-2.png"/>
+          <img src="https://img.icons8.com/fluency/48/000000/linkedin-2.png" />
         </a>
         {/* <a href="https://wa.me/919386667625" className={classes.a}>
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a> */}
         <a
-          href={
-            "https://play.google.com/store/apps/details?id=com.rishabh.concetto2019"
-          }
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.a}
           id="app-icon"
         >
-          <img src="https://img.icons8.com/fluency/48/000000/google-play.png"/>
+          <img src="https://img.icons8.com/fluency/48/000000/google-play.png" />
         </a>
         {/* <Tooltip
           placement="right"

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
 import { Link } from "react-router-dom";
@@ -45,91 +45,56 @@ const styles = theme => ({
   tabSelected: {}
 });
 
-class EventDetail extends Component {
-  constructor(props) {
-    super(props);
-    const { events, active } = props;
-    // this.departmentShow = this.departmentShow.bind(this);
-    // this.clubShow = this.clubShow.bind(this);
-    this.state = {
-      active: active,
-      departmental: events.filter(event => event.is_club === 0),
-      clubEvents: events.filter(event => event.is_club === 1)
-    };
-    // this.departmentShow = this.departmentShow.bind(this);
-    // this.clubShow = this.clubShow.bind(this);
-    // this.handleChange = this.handleChange.bind(this);
-  }
+function EventDetail(props) {
+  const [events, setEvents] = useState(props.events)
+  const [classes, setClasses] = useState(props.classes)
+  const [active, setActive] = useState(props.active)
+  const [departmentalEvents, setDepartmentalEvents] = useState([]);
+  const [clubEvents, setClubEvents] = useState([]);
 
-  // clubShow = () => {
-  //   this.setState({
-  //     active: 1
-  //   });
-  // };
-  //           departmentShow = () => {
-  //             this.setState({
-  //               active: 0
-  //             });
-  //           };
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  // handleChange = (event, active) => {
-  //   console.log(active);
-  //   return (
-  //     <Redirect
-  //       to={{
-  //         pathname: `/${active === 0 ? "department-events" : "club-events"}`
-  //       }}
-  //     />
-  //   );
-  // };
+  useEffect(() => {
+    setDepartmentalEvents(events.filter(event => event.event_type == "departmental"));
+    setClubEvents(events.filter(event => event.event_type === "club"))
+  }, [events]);
 
-  render() {
-    const { classes } = this.props;
-    const { clubEvents, departmental } = this.state;
-    return (
-      <div className={classes.mobileTab}>
-        <AppBar
-          style={{
-            backgroundColor: "rgba(1,1,1)",
-            overflow: "hidden",
-            zIndex: 10
-          }}
-          position="fixed"
+  return (
+    <div className={classes.mobileTab}>
+      <AppBar
+        style={{
+          backgroundColor: "rgba(1,1,1)",
+          overflow: "hidden",
+          zIndex: 10
+        }}
+        position="fixed"
+      >
+        <Tab>
+          <Header />
+        </Tab>
+        <Tabs
+          value={active}
+          indicatorColor="#666666"
+          textColor="secondary"
+          className={classes.tab}
         >
-          <Tab>
-            <Header />
-          </Tab>
-          <Tabs
-            value={this.state.active}
-            // onChange={this.handleChange}
-            indicatorColor="#666666"
-            textColor="secondary"
-            className={classes.tab}
-          >
-            <Tab
-              label="Department"
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              // onClick={this.departmentShow}
-              component={Link}
-              to="department-events"
-            />
-            <Tab
-              label="Club"
-              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-              component={Link}
-              to="club-events"
-            // onClick={this.clubShow}
-            />
-          </Tabs>
-        </AppBar>
-        {this.state.active === 1 && <ClubEvent events={clubEvents} />}
-        {this.state.active === 0 && <DepartmentEvent events={departmental} />}
-        <br />
-      </div>
-    );
-  }
+          <Tab
+            label="Department"
+            classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+            component={Link}
+            to="department-events"
+          />
+          <Tab
+            label="Club"
+            classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+            component={Link}
+            to="club-events"
+          />
+        </Tabs>
+      </AppBar>
+      {active === 1 && <ClubEvent events={clubEvents} />}
+      {active === 0 && <DepartmentEvent events={departmentalEvents} />}
+      <br />
+    </div>
+  );
 }
 
 export default withStyles(styles)(EventDetail);
