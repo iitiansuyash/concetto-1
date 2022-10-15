@@ -14,6 +14,8 @@ const SponsorsContainer = styled(Container)`
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  justify-content: center;
 `
 const Title = styled.h2`
   text-align: center;
@@ -32,22 +34,31 @@ const Subtitle = styled.h3`
   font-size: 36px;
   font-family: "Moneterrat", sans-serif;
 `
+const StyledImg = styled.img`
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+`
 
 export default function Sponsors() {
 
   const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://admin.concetto.in/sponsors/", { mode: 'cors' }).then(res => res.json()).then(data => setData(data));
+  }, []);
+
 
   return (
     <>
       <Header />
       <section className="sponsors">
         <Title>Sponsors</Title>
-        <Subtitle>Major Sponsors</Subtitle>
         <SponsorsContainer>
           <div className="sponsors-list">
-            {data.filter(sponsor => sponsor.category == "Major Sponsor").map(sponsor => {
+            {data.map(sponsor => {
               return <a href={sponsor.url} target="_blank">
-                <img src={sponsor.imageAddress} alt={sponsor.name} className="img-fluid cap-logo" />
+                <StyledImg src={sponsor.logo} alt={sponsor.name} className="img-fluid cap-logo" />
               </a>
             })}
           </div>
