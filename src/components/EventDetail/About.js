@@ -14,7 +14,8 @@ export default function About(props) {
   const [event, setEvent] = useState(props.event);
 
   const convertTimestamp = (timestamp) => {
-    let myDate = new Date(timestamp).toLocaleString("en-us", { timeZone: "Asia/Kolkata" })
+    let myDate = new Date(timestamp).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
+    console.log(myDate);
     return myDate;
   }
 
@@ -39,7 +40,6 @@ export default function About(props) {
       <StyledText>
         {event.summary}
       </StyledText>
-      <br />
       <StyledText>
         {`${event.event_type === "club"
           ? " CLUB  :  " + event.presented_by
@@ -47,15 +47,12 @@ export default function About(props) {
           }`}
       </StyledText>
       <br />
-      <br />
       <StyledText>
         {`Registration ends : ${convertTimestamp(event.register_timestamp)}`}
       </StyledText>
-      <br />
       <StyledText>
         {`Event duration : ${convertTimestamp(event.start_timestamp)} - ${convertTimestamp(event.end_timestamp)}`}
       </StyledText>
-      <br />
       <StyledText>
         {`Venue : ${event.venue}`}
       </StyledText>
