@@ -10,7 +10,7 @@ function Mobileview(props) {
   const [event, setEvent] = useState(props.event);
 
   const convertTimestamp = (timestamp) => {
-    let myDate = new Date(timestamp).toLocaleString("en-us", { timeZone: "Asia/Kolkata" })
+    let myDate = new Date(timestamp).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
     return myDate;
   }
 
