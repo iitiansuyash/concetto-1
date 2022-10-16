@@ -44,12 +44,12 @@
   align-items: center;
 }
 .cap-logo {
-  width: 500px !important;
+  max-width: 400px !important;
   height: auto !important;
 }
 @media only screen and (max-width: 500px) {
   .cap-logo {
-    width: 350px !important;
+    width: 300px !important;
     height: auto;
   }
 }

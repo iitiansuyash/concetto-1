@@ -5,7 +5,6 @@ import Header from "../Header";
 import './styles.css';
 
 const SponsorsContainer = styled(Container)`
-  min-height: 100%;
   margin-top: 0px;
   position: relative;
   background: rgba(255, 255, 255, 0.1);
@@ -14,7 +13,6 @@ const SponsorsContainer = styled(Container)`
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  overflow: hidden;
   justify-content: center;
 `
 const Title = styled.h2`
@@ -35,14 +33,19 @@ const Subtitle = styled.h3`
   font-family: "Moneterrat", sans-serif;
 `
 const StyledImg = styled.img`
-  object-fit: cover;
-  width: 100%;
-  height: 250px;
+  height: 100% !important;
 `
 
 export default function Sponsors() {
-
+  const [windowHeight, setWindowHeight] = useState(null);
   const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      setWindowHeight(window.innerHeight);
+    }
+    window.addEventListener("resize", updateDimensions);
+  })
 
   useEffect(() => {
     fetch("https://admin.concetto.in/sponsors/", { mode: 'cors' }).then(res => res.json()).then(data => setData(data));
@@ -52,7 +55,7 @@ export default function Sponsors() {
   return (
     <>
       <Header />
-      <section className="sponsors">
+      <section className="sponsors" style={{ minHeight: { windowHeight } + 'px' }}>
         <Title>Sponsors</Title>
         <SponsorsContainer>
           <div className="sponsors-list">
