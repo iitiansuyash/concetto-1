@@ -118,3 +118,19 @@
     display: none;
   }
 }
+
+
+
+/* moon bottom logo */
+
+@media only screen and (max-width: 760px){
+  .Home-moon-4{
+    display: none;
+    /* height: 250px; */
+    /* width: 300px; */
+  }
+  .moon{
+    display: none;
+  }
+  
+}

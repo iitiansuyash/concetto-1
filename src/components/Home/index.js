@@ -42,8 +42,12 @@ const styles = theme => ({
     height: "300px",
     width: "600px",
     bottom: 20,
-    position: "fixed"
+    position: "fixed",
+    [theme.breakpoints.down("md")]: {
+      display: "none"
+    }
   }
+  
 });
 class Home extends Component {
   constructor(props) {
