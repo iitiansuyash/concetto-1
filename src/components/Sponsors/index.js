@@ -5,7 +5,6 @@ import Header from "../Header";
 import './styles.css';
 
 const SponsorsContainer = styled(Container)`
-  margin-top: 0px;
   position: relative;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
@@ -33,7 +32,7 @@ const Subtitle = styled.h3`
   font-family: "Moneterrat", sans-serif;
 `
 const StyledImg = styled.img`
-  height: 100% !important;
+  height: 120px !important;
 `
 
 export default function Sponsors() {
