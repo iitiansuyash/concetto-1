@@ -20,7 +20,8 @@ const styles = theme => ({
     minWidth: "50%",
     textTransform: "initial",
     fontWeight: "bold",
-    backgroundColor: "#999999",
+    backgroundColor: "rgba(0, 255, 255, 0.637)",
+    borderRadius: "10px",
     color: "white",
     "&:hover": {
       color: "#000",
@@ -28,7 +29,8 @@ const styles = theme => ({
     },
     "&$tabSelected": {
       color: "white",
-      backgroundColor: "#666666",
+      backgroundColor: "rgba(0, 0, 0, 0.6)",
+      
       fontWeight: "bold"
     }
   },
@@ -61,7 +63,7 @@ function EventDetail(props) {
     <div className={classes.mobileTab}>
       <AppBar
         style={{
-          backgroundColor: "rgba(1,1,1)",
+          backgroundColor: "#1b2d50",
           overflow: "hidden",
           zIndex: 10
         }}
@@ -77,19 +79,20 @@ function EventDetail(props) {
           className={classes.tab}
         >
           <Tab
-            label="Department"
-            classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
-            component={Link}
-            to="department-events"
-          />
-          <Tab
             label="Club"
             classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
             component={Link}
             to="club-events"
           />
+          <Tab
+            label="Department"
+            classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+            component={Link}
+            to="department-events"
+          />
         </Tabs>
       </AppBar>
+      <br />
       {active === 1 && <ClubEvent events={clubEvents} />}
       {active === 0 && <DepartmentEvent events={departmentalEvents} />}
       <br />
