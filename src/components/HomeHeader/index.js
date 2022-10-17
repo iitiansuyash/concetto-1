@@ -157,7 +157,7 @@ class Header extends Component {
                   CAP
                 </NavLink>
               </li> */}
-              {/* <li>
+              <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/guest-talks"
@@ -167,7 +167,7 @@ class Header extends Component {
                 </NavLink>
               </li>
               
-              */}
+             
             </ul>
           </div>
         </nav>

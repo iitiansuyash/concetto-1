@@ -150,7 +150,7 @@ class Header extends Component {
                   OUR TEAM
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/guest-talks"
@@ -158,7 +158,7 @@ class Header extends Component {
                 >
                   GUEST TALKS
                 </NavLink>
-              </li> */}
+              </li>
             </ul>
           </div>
         </nav>

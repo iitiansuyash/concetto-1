@@ -65,6 +65,16 @@ export default function Sponsors() {
             })}
           </div>
         </SponsorsContainer>
+        {/* <SponsorsContainer>
+          <Subtitle>Our Partners</Subtitle>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              return <a href={sponsor.url} target="_blank">
+                <StyledImg src={sponsor.logo} alt={sponsor.name} className="img-fluid cap-logo" />
+              </a>
+            })}
+          </div>
+        </SponsorsContainer> */}
       </section>
     </>
   )

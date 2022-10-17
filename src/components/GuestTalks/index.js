@@ -2,8 +2,17 @@ import React, { Component } from "react";
 import { GuestTalks } from "../../data/GuestTalks";
 import Header from "../Header";
 import "./styles.css";
+import styled from 'styled-components';
 import { Helmet } from "react-helmet";
 
+const Subtitle = styled.h3`
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: -2px;
+  color: white;
+  font-size: 36px;
+  font-family: "Moneterrat", sans-serif;
+`
 class GuestTalk extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -25,6 +34,7 @@ class GuestTalk extends Component {
         </Helmet>
         <Header />
         <br />
+        <br />
         <h1
           style={{
             textAlign: "center",
@@ -34,7 +44,8 @@ class GuestTalk extends Component {
         >
           GUEST TALKS
         </h1>
-        <div className="container">
+        <Subtitle>Coming Soon..</Subtitle>
+        {/* <div className="container">
           {GuestTalks.map((talk, id) => (
             <div className="row" key={id.toString()}>
               <div
@@ -98,7 +109,7 @@ class GuestTalk extends Component {
               <br />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     );
   }
