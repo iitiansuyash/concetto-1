@@ -56,25 +56,103 @@ export default function Sponsors() {
       <Header />
       <section className="sponsors" style={{ minHeight: { windowHeight } + 'px' }}>
         <Title>Sponsors</Title>
+        <Subtitle>Major Sponsors </Subtitle> 
         <SponsorsContainer>
           <div className="sponsors-list">
             {data.map(sponsor => {
-              return <a href={sponsor.url} target="_blank">
-                <StyledImg src={sponsor.logo} alt={sponsor.name} className="img-fluid cap-logo" />
-              </a>
+              if(sponsor.category == "Major Sponsors"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
             })}
           </div>
         </SponsorsContainer>
-        {/* <SponsorsContainer>
-          <Subtitle>Our Partners</Subtitle>
+        <Subtitle>Skill Development Partner</Subtitle>
+        <SponsorsContainer>
           <div className="sponsors-list">
             {data.map(sponsor => {
-              return <a href={sponsor.url} target="_blank">
-                <StyledImg src={sponsor.logo} alt={sponsor.name} className="img-fluid cap-logo" />
-              </a>
+              if(sponsor.category == "Skill Development Partner"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
             })}
           </div>
-        </SponsorsContainer> */}
+        </SponsorsContainer>
+        <Subtitle>Event Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Event Sponsor"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Food Partner</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Food Partner"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Education Sponsor</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Education Sponsor"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Hospitality Partner</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Hospitality Partner"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Technology Service Partner</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Technology Service Partner"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+        <Subtitle>Books Partner</Subtitle>
+        <SponsorsContainer>
+          <div className="sponsors-list">
+            {data.map(sponsor => {
+              if(sponsor.category == "Books Partner"){
+                return <a href={sponsor.url} target="_blank">
+                    <StyledImg src={sponsor.logo} />
+                  </a>
+              }
+            })}
+          </div>
+        </SponsorsContainer>
+
       </section>
     </>
   )

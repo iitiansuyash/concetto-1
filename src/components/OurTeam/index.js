@@ -30,11 +30,11 @@ export default function OurTeam() {
       <br />
       <br />
       {width > 486 ? (
-        <h2 align="center" className="title highlighted" style={{ color: "black" }}>
+        <h2 align="center" className="title highlighted">
           CORE TEAM
         </h2>
       ) : (
-        <h2 align="center" className="highlighted" style={{ color: "black" }}>
+        <h2 align="center" className="highlighted">
           OUR TEAM
         </h2>
       )

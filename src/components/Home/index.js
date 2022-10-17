@@ -180,6 +180,7 @@ class Home extends Component {
       <div>
         <Helmet>
           <title>Concetto</title>
+          <link rel="shortcut icon" href="./favicon.ico" />
           <meta
             name="description"
             content="Concetto is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes, who stalk the grounds of ISM to prove their technical expertise."
@@ -231,7 +232,7 @@ class Home extends Component {
         <div className={classes.parallax + " gradientBg mt-0"} >
           {HomeContent.map((content, id) => {
             if (window.innerWidth < 992)
-              return <ParallaxM key={id.toString()} content={content} />;
+              return <ParallaxM key={id.toString()} content={content} />; 
             else if (id % 2 === 0)
               return <Parallax x={x} key={id.toString()} content={content} />;
             else
@@ -241,6 +242,12 @@ class Home extends Component {
                 <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
+          <button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link">
+              REGISTER HERE 
+            </a>
+          </button>            
+
         </div>
 
 

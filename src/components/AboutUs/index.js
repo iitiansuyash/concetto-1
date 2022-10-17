@@ -41,26 +41,15 @@ class AboutUs extends Component {
           <div className="row container">
             <div className="col-12 col-md-6 opaque ">
               <br />
-              The 3 day technical fiesta of IIT(ISM) - "CONCETTO" is one of the
-              largest Techno-management fest in Eastern India with a massive
-              participation of more than 2000 participants from 300 different
-              colleges and institutes, who stalk the grounds of ISM to prove
-              their technical expertise. Encompassing the various boundaries of
-              science and technology, Concetto is there with 44 events in all
-              providing a platform to shoot the "TECHNICAL ME" of everyone.
-              Apart from the various Robotics and Coding events, Concetto calls
-              all you budding entrepreneurs to showcase your innovative business
-              skills. Several departmental events of petroleum engineering,
-              mining engineering and mechanical engineering are all lined up as
-              well. At the same time, hone your skills by joining our workshops
-              taken by the eminent personalities in the various fields of
-              science.
-              <br />
-              Packed with this plethora of technical events - competitions,
-              workshops, guest lectures, paper meet and exhibition, Concetto is
-              every bit what an engineering lad aspires of. Prizes worth one
-              million, loads of goodies and lots of lots of fun are all that
-              await one who becomes a witness to this legendary event.
+              Concetto - the 3 day annual techno-management fest of IIT(ISM) Dhanbad.
+              Concetto is the place where the magnificent minds of students from all over India come together to turn their ideas into reality. 
+              This is a great event for aspiring engineers to learn about any technical field they have ever thought of. 
+              There are many events related to every department of Engineering where we can learn about many new things. 
+              These are the events which make learning fun. 
+              Concetto is here with the events like “Sky is the limit’’, “Runism”, “Tradathon”, “Bussinelytics” and many more which also includes cultural events,workshops,guest lectures. 
+              <br /> <br />
+              The theme of Concetto’22 is “AUGMENTED REALITY - VIRTUAL REALITY-Reality beyond Vision” where students can experience anything just through their smartphone. 
+              Prizes worth a million, loads of goodies, certificates and lots of fun are all that awaits everyone who becomes a witness of this legendary event.
             </div>
             <div
               className="col-12 col-md-6"
