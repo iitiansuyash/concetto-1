@@ -98,7 +98,7 @@ class AboutUs extends Component {
           <br />
         </div>
         <br />
-        {/* <h1
+        <h1
           style={{
             textAlign: "center",
             marginTop: "120px",
@@ -112,28 +112,12 @@ class AboutUs extends Component {
         </h1>
         <div className="container opaque">
           <br />
-          "Astronomy compels the soul to look upward, and leads us from this
-          world to another." Equipped with his five senses, man explores the
-          universe around him and calls that adventurous Science as Astronomy.
-          Astronomy is useful because it raises us above ourselves. It is useful
-          because it is grand. It shows us how small is man's body, how great
-          his mind, since his intelligence can embrace the whole of this
-          dazzling immensity, where his body is only an obscure point, and enjoy
-          its silent harmony. When we look at the moon, we do not see a hostile,
-          empty world. We see the radiant body where man has taken his first
-          steps into a frontier that will never end. Ten years ago the Moon was
-          an inspiration to poets and an opportunity for lovers. Ten years from
-          now it will be just another airport. In a world full of complexity and
-          chaos, CONCETTO’22 endeavours to bring along all of you and
-          rejuvenate you with extreme joviality and buoyancy. With the aim of
-          providing a platform for the tech enthusiast students to develop and
-          showcase their technical prowess, CONCETTO is the ideal destination
-          for all technophiles. Boasting of a huge roaster of exhilarating and
+          Our minds hold a world of endless possibilities, a world in which we can do whatever we imagine – fight space monsters, explore the oceans, fly a plane, design a city, jump into the universe of our favourite movie franchise.AR and VR give us the chance to live out these dreams.Augmented reality is a technology that enhances your surroundings by adding digital elements to a live view – possible through the camera of your smartphone!Virtual reality holds the power to immerse you in a simulated world of your choice – a world you can explore and interact with.This theme of Concetto ’22 serves as a reminder that imagination is our only limit, and that technology holds the key to shaping our future.Concetto ’22 has informative workshops, and a roster of compelling events –there’s an event for an enthusiast of every technical field!Build robots, code your heart out, create new designs, trade virtual money, test your wits in quizzes, and a lot more!Concetto ’22 returns, bigger and bolder than ever before, and is waiting for you tech geeks out there! Boasting of a huge roaster of exhilarating and
           engaging events, along with promises to be grander, greater, more
           splendid and glorious than ever before IIT ISM presenting{" "}
           <b>CONCETTO: REALITY BEYOND VISION</b>.
         </div>
-        <br /> */}
+        <br />
         <h1
           style={{
             textAlign: "center",

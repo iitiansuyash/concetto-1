@@ -25,7 +25,6 @@ function Main(props) {
 
   useEffect(async () => {
     await fetch("https://admin.concetto.in/events/", { mode: 'cors' }).then(res => res.json()).then(data => setEvents(data));
-    console.log(events)
   }, []);
 
   function makeShowLogo() {

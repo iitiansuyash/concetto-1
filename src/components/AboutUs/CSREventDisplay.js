@@ -6,7 +6,7 @@ function CSREventDisplay(props) {
     <div className="container">
       {CSREvents.map((event, id) => (
         <div className="row" key={id.toString()}>
-          <div
+          {/* <div
             className={"col-12 col-lg-3 " + (id % 2 === 0 ? " order-lg-2" : "")}
             style={{
               display: "flex",
@@ -25,10 +25,10 @@ function CSREventDisplay(props) {
               aria-label="Placeholder: 350x350"
               alt={event.name}
             />
-          </div>
+          </div> */}
           <div
             className={
-              "col-12 col-lg-6 col-lg-9" + (id % 2 === 0 ? " order-lg-1" : "")
+              "col-12 col-lg-6 col-lg-12" + (id % 2 === 0 ? " order-lg-1" : "")
             }
           >
             <div class="wrapper">

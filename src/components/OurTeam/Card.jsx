@@ -139,14 +139,7 @@ const CardContact = styled.div`
 
 
 export default function Card(props) {
-    const [member, setMember] = useState({
-        id: 3,
-        name: "Bhimesh Agrawal",
-        image: "https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
-        designation: "UI/UX Developer",
-        contact: "+91 9414614793",
-        linkedin: "https://www.linkedin.com/bhimesh-agrawal"
-    })
+    const [member, setMember] = useState(props.member)
 
     return (
         <CardBody id={member.id}>
