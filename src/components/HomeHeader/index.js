@@ -166,8 +166,15 @@ class Header extends Component {
                   GUEST TALKS
                 </NavLink>
               </li>
-              
-             
+              <li>
+                <a
+                  className="nav-link header-link "
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link"
+                  onClick={this.toggleMenu}
+                >
+                  REGISTER
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
