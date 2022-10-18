@@ -3,6 +3,7 @@ import Header from "../Header";
 import Card from "./Card";
 import "./styles.css";
 import { Helmet } from "react-helmet";
+import Footer from "../Footer";
 
 export default function OurTeam() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -47,6 +48,7 @@ export default function OurTeam() {
           ))}
         </div>
       </div>
+      {/* <Footer /> */}
     </div >
   );
 }

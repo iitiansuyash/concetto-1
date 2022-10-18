@@ -11,6 +11,7 @@ import CLOUDS from 'vanta/dist/vanta.clouds.min.js';
 import * as THREE from 'three'
 import "./styles.css";
 import { Helmet } from "react-helmet";
+// import Safe from "react-safe"
 
 let max_offset, initial_offset;
 
@@ -191,6 +192,15 @@ class Home extends Component {
           />
           <meta property="og:url" content="https://www.concetto.in/" />
         </Helmet>
+        {/* <Safe.script async src="https://www.googletagmanager.com/gtag/js?id=G-6WVX154NPV"></Safe.script>
+        <Safe.script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'G-6WVX154NPV');
+        </Safe.script> */}
+        
         <section id="scroll_down" className="demo">
           <a
             onClick={() => {
@@ -242,11 +252,21 @@ class Home extends Component {
                 <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
-          <button>
+          {/* <button>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link">
               REGISTER HERE 
             </a>
-          </button>            
+          </button>             */}
+          <div class='btn-cont'>
+              <a class='btn' href='https://docs.google.com/forms/d/e/1FAIpQLScodg_UYACMBMLkUaN-FwXrmQDDGuq9K0-KPRl3AKRS7FoPoQ/viewform?usp=sf_link'>
+                REGISTER HERE
+                <span class='line-1'></span>
+                <span class='line-2'></span>
+                <span class='line-3'></span>
+                <span class='line-4'></span>
+              </a>
+            </div>
+
 
         </div>
 
