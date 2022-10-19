@@ -5,9 +5,66 @@ import "./styles.css";
 import { Helmet } from "react-helmet";
 import Footer from "../Footer";
 
+const styles = theme => ({
+  mobileTab: {
+    border: "1px solid white",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
+  tabRoot: {
+    minWidth: "50%",
+    textTransform: "initial",
+    fontWeight: "bold",
+    backgroundColor: "rgba(0, 255, 255, 0.637)",
+    borderRadius: "10px",
+    color: "white",
+    "&:hover": {
+      color: "#000",
+      opacity: 1
+    },
+    "&$tabSelected": {
+      color: "white",
+      backgroundColor: "rgba(0, 0, 0, 0.6)",
+
+      fontWeight: "bold"
+    }
+  },
+  tabsRoot: {
+    minWidth: "50%",
+    borderBottom: "1px solid #e8e8e8"
+  },
+  tabsIndicator: {
+    backgroundColor: "#1890ff"
+  },
+  tab: {
+    width: "100%"
+  },
+  tabSelected: {}
+});
+
 export default function OurTeam() {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(window.innerWidth);
+  // const [isCoreActive, setIsCoreActive] = useState(true);
   const [coreTeam, setCoreTeam] = useState([]);
+  // const [developers, setDevelopers] = useState([
+  //   {
+  //     "id": 1,
+  //     "name": "Bhimesh Agrawal",
+  //     "image": "https://avatars.githubusercontent.com/u/65838772?v=4",
+  //     "designation": "Frontend Developer",
+  //     "linkedin": "https://www.linkedin.com/in/bhimesh-agrawal/",
+  //     "contact": "9414614793"
+  //   },
+  //   {
+  //     "id": 2,
+  //     "name": "Suyash Suryavanshi",
+  //     "image": "",
+  //     "designation": "Frontend Developer",
+  //     "linkedin": "https://www.linkedin.com/in/suyash-suryavanshi-1b020a203/",
+  //     "contact": "9001662144"
+  //   },
+  // ])
 
   useEffect(() => {
     fetch("https://admin.concetto.in/organisingteammembers/", { mode: 'cors' }).then(res => res.json()).then(data => setCoreTeam(data));
@@ -28,6 +85,45 @@ export default function OurTeam() {
         />
       </Helmet>
       <Header />
+
+      {/* <div className={classes.mobileTab}>
+        <AppBar
+          style={{
+            backgroundColor: "#1b2d50",
+            overflow: "hidden",
+            zIndex: 10
+          }}
+          position="fixed"
+        >
+          <Tab>
+            <Header />
+          </Tab>
+          <Tabs
+            value={active}
+            indicatorColor="#666666"
+            textColor="secondary"
+            className={classes.tab}
+          >
+            <Tab
+              label="Core Team"
+              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              component={Link}
+              to="core-team"
+            />
+            <Tab
+              label="Developers"
+              classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              component={Link}
+              to="developers"
+            />
+          </Tabs>
+        </AppBar>
+        <br />
+        {active === true && <CardList members={coreTeam} />}
+        {active === false && <CardList members={developers} />}
+        <br />
+      </div> */}
+
       <br />
       <br />
       {width > 486 ? (

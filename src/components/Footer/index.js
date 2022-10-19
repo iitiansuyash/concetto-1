@@ -84,7 +84,7 @@ class Footer extends React.Component {
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a> */}
         <a
-          href="#"
+          href="https://play.google.com/store/apps/details?id=com.concetto.concetto"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.a}
