@@ -69,7 +69,7 @@ class Header extends Component {
                   ABOUT US
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   className="nav-link header-link "
                   to="/exhibitions"
@@ -77,7 +77,7 @@ class Header extends Component {
                 >
                   EXHIBITIONS
                 </NavLink>
-              </li> */}
+              </li>
               {/* <li>
                 <NavLink
                   className="nav-link header-link "
